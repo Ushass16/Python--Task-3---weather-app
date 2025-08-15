@@ -32,7 +32,7 @@ The objective of this project is to develop a **web-based Weather Application** 
 
 ## 📸 Screenshot  
 *(Replace `screenshot.png` with your actual file)*  
-![Weather App Screenshot](screenshot.png)  
+![Weather App Screenshot](image.png)  
 
 ---
 
