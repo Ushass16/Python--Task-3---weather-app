@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Weather App</title>
+<style>
+  body { font-family: Arial, sans-serif; background: #f0f0f0; text-align: center; padding: 50px; }
+  .card { background: white; padding: 20px; border-radius: 8px; max-width: 300px; margin: auto; }
+  input, button { padding: 8px; margin: 5px 0; width: 90%; }
+  button { background: #4CAF50; color: white; border: none; cursor: pointer; }
+  button:hover { background: #45a049; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <h2>🌤️ Weather App</h2>
+    <form method="GET">
+      <input type="text" name="city" placeholder="Enter city" value="{{ city or '' }}" required>
+
+      <button type="submit">Get Weather</button>
+    </form>
+    {% if weather %}
+      <p>Temperature: {{ weather.temp }}°C</p>
+      <p>Humidity: {{ weather.humidity }}%</p>
+      <p>Condition: {{ weather.condition }}</p>
+    {% elif city %}
+      <p>❌ Could not find weather for "{{ city }}"</p>
+    {% endif %}
+  </div>
+</body>
+</html>
+
