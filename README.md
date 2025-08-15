@@ -28,12 +28,7 @@ The objective of this project is to develop a **web-based Weather Application** 
 - Displays **temperature (°C)**, **humidity (%)**, and **weather condition** in a clean and user-friendly format.  
 - Improved understanding of **REST API integration** and **Flask-based web application development**.  
 
----
 
-## 📸 Screenshot  
-*(Replace `screenshot.png` with your actual file)*  
-![Weather App Screenshot](image.png) 
-![Weather App Screenshot](Mysore.png)
 
 ---
 
